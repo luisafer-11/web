@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Página</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <!-- Estilo personalizado -->
+  <style>
+    body {
+      padding-top: 56px; /* Espacio para la barra de navegación */
+      text-align: justify;
+      background-color: rgb(249, 252, 226);
+    }
+    .navbar ul{
+        background-color: rgb(53, 53, 53);
+        padding: 10px;
+        text-align: right;
+        font-size: 20px;
+    }
+    .custom-section {
+      padding: 60px;
+    }
+    .image-thumbnail {
+      cursor: pointer;
+      transition: transform 0.2s;
+    }
+    .image-thumbnail:hover {
+      transform: scale(1.05);
+    }
+    .social-icons a {
+      margin: 0 10px;
+      color: #f5bde9;
+      transition: color 0.3s;
+    }
+    .social-icons a:hover {
+      color: #007bff;
+    }
+    
+  </style>
+</head>
+<body>
+  <!-- Barra de navegación -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#"><h3>LUCC</h3></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto"> <!-- Mueve los enlaces al lado derecho -->
+          <li class="nav-item">
+            <a class="nav-link active" href="#inicio">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#skin care products">skin care products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#Tips de belleza">Tips de belleza</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#login">Login</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Sección Inicio -->
+  <section id="inicio" class="custom-section bg-light">
+    <div class="container text-center">
+        <center>
+            <img src="https://i.pinimg.com/736x/05/1e/5a/051e5a71a003aca7d0d128bfd209d2e2.jpg" width="270px">
+        </center>
+      <h1>Bienvenido a LUCC</h1>
+        <p>"¡Hola y bienvenida a mi blog de belleza! Este espacio está diseñado para inspirarte, educarte y ayudarte a resaltar tu belleza natural.Aquí encontrarás consejos prácticos, las últimas tendencias y rutinas para cuidar tu piel, cabello y bienestar."</p>
+
+        <p>En este espacio, la belleza no es solo una rutina, sino un arte y un cuidado personal. Aquí encontrarás los mejores consejos, productos y tendencias para resaltar tu esencia única.</p>
+        
+        <p> consejos para mantener una piel radiante hasta secretos para un cabello saludable, ofrecemos información actualizada.</p>
+        <p>¿Quieres aprender más sobre rutinas de cuidado facial? Haz clic <a href="#Tips de belleza">aquí</a>.</p>        
+        
+    </div>
+  </section>
+
+  <!-- Sección Galería -->
+  <section id="skin care products" class="custom-section">
+    <div class="container">
+      <h2 class="text-center">skin care products</h2>
+      <p class="text-center">Haz clic en las imágenes para más información.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/files/173.png?v=1713551487&width=600" class="img-fluid image-thumbnail" alt="Imagen 1" data-bs-toggle="modal" data-bs-target="#imageModal1">
+        </div>
+        <div class="col-md-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/files/8_LE_auto_x2_b9f29573-d281-47ae-86c2-a381f0550412.jpg?v=1716820198&width=600" class="img-fluid image-thumbnail" alt="Imagen 2" data-bs-toggle="modal" data-bs-target="#imageModal2">
+        </div>
+        <div class="col-md-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/products/191.png?v=1664384442&width=600" class="img-fluid image-thumbnail" alt="Imagen 3" data-bs-toggle="modal" data-bs-target="#imageModal3">
+        </div>
+        <div class="col-md-4 mt-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/files/155.png?v=1713526792&width=600" class="img-fluid image-thumbnail" alt="Imagen 4" data-bs-toggle="modal" data-bs-target="#imageModal4">
+        </div>
+        <div class="col-md-4 mt-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/files/253_8f95584b-c381-4d54-9165-33f58d031720.png?v=1715885657&width=600" class="img-fluid image-thumbnail" alt="Imagen 5" data-bs-toggle="modal" data-bs-target="#imageModal5">
+        </div>
+        <div class="col-md-4 mt-4">
+          <img src="https://thegrapebeauty.com.ec/cdn/shop/files/artespaginaweb.png?v=1692746993&width=600" class="img-fluid image-thumbnail" alt="Imagen 6" data-bs-toggle="modal" data-bs-target="#imageModal6">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modales para imágenes -->
+  <div class="modal fade" id="imageModal1" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Glow Serum: Propolis + Niacinamide</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/products/propolis-niacinamide-glow-serum-beauty-of-joseon-299.png?v=1713551487&width=600" width="250px">
+            </center>   
+          <p>Este suero está diseñado para aquellas personas que desean tratar los poros dilatados y la inflamación de la piel. Con una mezcla de un 60% de extracto de propóleo y un 2% de niacinamida, controla el exceso de sebo, ilumina el rostro y mantiene la hidratación de tu piel.</p>
+          <b>IDEAL PARA:</b>
+            <p>Aportar luminosidad</p>
+            <p>Controlar el exceso de sebo</p>
+            <p>Tratar poros dilatados</p>
+            <p>USO: AM/PM</p>
+            
+            <p>TIPO DE PIEL: Apto para todo tipo de piel, hasta las más sensibles.</p>
+          
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal2" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Cotton Soft Sun Stick</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/products/3_a7f19325-1018-48c4-9243-7532f7dcc96b.png?v=1716820204&width=600" width="250px">
+            </center>  
+        <p>El Tocobo Cotton Soft Sun Stick es ideal para retocar y proteger la piel en cualquier momento sin afectar el maquillaje. Con SPF 50+, hidratación y extracto de algodón, esta barra de protección solar es suave y ligera, sin dejar residuos pegajosos..</p>
+        <b>IDEAL PARA:</b>
+            <p>-Proteger de sol </p>
+            <p>-Reaplicar el protector solar</p>
+            <p>-Hidratar</p>
+            <p>-USO: AM</p>
+            
+            <p>-TIPO DE PIEL: Mixta / Grasa / Sensible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal3" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Ginseng Cleansing Oil</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/products/193.png?v=1664384441&width=600" width="250px">
+            </center>
+          <p>Este aceite limpiador ligero y suave está enriquecido con ingredientes nutritivos a base de hierbas coreanas, como el ginseng y el aceite de salvado de arroz, que ayudan a eliminar el maquillaje, las impurezas y el exceso de aceite, a la vez que hidratan y rejuvenecen la piel.</p>
+          <b>IDEAL PARA:</b>
+            <p>-Limpiar profundamente</p>
+            <p>-Remover el maquillaje</p>
+            <p>-Calmar irritaciones</p>
+            <p>-Hidratar</p>
+            <p>-Exfoliar</p>
+            <p>-USO: AM/PM</p>
+            
+            <p>-TIPO DE PIEL: Piel seca / Piel grasa / Piel mixta / Piel sensible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal4" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Advanced Snail 96 Mucin Power Essence</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/files/157.png?v=1713526792&width=600" width="250px">
+            </center>
+          <p>Consigue una piel suave, hidratada y radiante con el poder de la mucina de caracol. Esta esencia está enriquecida con un 96 % de filtrado de secreción de caracol, conocido por rejuvenecer la piel. Mejora la textura y elasticidad, proporcionando nutrientes esenciales y humedad para reparar la piel dañada y calmar la irritación</p>
+          <b>IDEAL PARA:</b>
+            <p>-Manchitas</p>
+            <p>-Cicatrices</p>
+            <p>-Hiperpigmentación</p>
+            <p>-Acné</p>
+            <p>-Piel opaca</p>
+            <p>Textura áspera</p>
+            <p>-USO: AM/PM</p>
+            <p>-TIPO DE PIEL:todas</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal5" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">Low pH Good Morning Gel Cleanser</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/files/254_920cef97-c08a-43ce-9fe9-ed41c073c38d.png?v=1715885657&width=600" width="250px">
+            </center>
+          <p>El COSRX Low pH Good Morning Gel Cleanser es un limpiador facial ultra suave formulado con ingredientes purificadores de poros que eliminan suavemente las impurezas. Dejará tu piel con una sensación de limpieza, suavidad y frescura sin quitarle sus aceites naturales. Aporta a la hidratación, protege la barrera de la piel y restaura el equilibrio del pH.</p>
+          <b>IDEAL PARA:</b>
+            <p>-Controlar sebo</p>
+            <p>-Igual la textura</p>
+            <p>-Piel opaca</p>
+            <p>-Restaura el balance del pH</p>
+            <p>-Piel opaca</p>
+            <p>-Protege la barrera de la piel</p>
+            <p>-USO: AM/PM</p>
+            <p>-TIPO DE PIEL:Todas las pieles/ Mixta / Grasa / Sensible</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="modal fade" id="imageModal6" tabindex="-1" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title">AHA BHA PHA 30 Days Miracle AC SOS Kit</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+            <center>
+                <img src="https://thegrapebeauty.com.ec/cdn/shop/products/3_e330f609-7994-4971-8f51-16441b9c357b.png?v=1692746993&width=600" width="250px">
+            </center>
+          <p>¿Para quién es este kit?:</p>
+          <p>El AHA-BHA-PHA 30 Days Miracle Acne SOS Kit de Some by Mi es un conjunto de cuatro productos diseñados para ayudar a combatir el acné y mejorar la apariencia de la piel en solo 30 días con su fórmula combinada de AHA, BHA, PHA y vitamina C.
+
+            Apto para pieles con tendencia al acné.</p>
+            <p>¿Qué hace este kit?:</p>
+            <p>¡Deje la piel con un aspecto suave y claro con este kit AHA, BHA, PHA 30 Days Miracle AC SOS que incluye cuatro piezas aptas para viajes! La espuma transparente Miracle Acne elimina las impurezas y el exceso de sebo de los poros, mientras que el tónico Miracle calma e hidrata la piel. Continúe con el suero milagroso para combatir el acné y equilibrar los niveles de aceite y agua de la piel. Termine con la Crema Miracle formulada con cica para calmar y fortalecer la piel con efectos duraderos.</p>
+            <p>Este kit AHA, BHA, PHA 30 días AC SOS consta de</p>
+            <p>- Espuma Limpiadora Milagrosa Acné 30ml</p>
+            <p>- Tónico Milagroso 30ml</p>
+            <p>- Suero Milagroso 10ml</p>
+            <p>- Crema Milagrosa 20g</p>
+            <p>Beneficios:</p>
+            <p>Prueba de irritación de la piel completada.
+                4 pasos de productos de la línea AC para el cuidado urgente de la piel.
+                Con AHA para exfoliar las impurezas de la piel y las células muertas de la piel.
+                Con BHA para eliminar la suciedad de la piel y el sebo dentro de los poros.
+                Con PHA para disolver las células muertas de la piel para una exfoliación no irritante.
+                Libre de 20 ingredientes nocivos. Formulado con ingredientes de origen natural.</p>
+            <p>Uso sugerido</p>
+            <p>1. Utilizar en el orden Espuma → Tónico → Suero → Crema.</p>
+            <p>2. Enjabone una cantidad adecuada de espuma, aplique en la cara y masajee suavemente para limpiar.</p>
+            <p>3. Después de la limpieza, aplique una cantidad adecuada de tóner a lo largo de la textura de la piel y golpee suavemente para una mayor absorción.</p>
+            <p>4. Siga con Serum & Cream, aplique una cantidad adecuada a lo largo de la textura de la piel y golpee suavemente para una mayor absorción.</p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sección Contacto -->
+<section id="Tips de belleza" class="custom-section bg-light">
+    <div class="container text-center">
+    <h1>Tips de belleza</h1>
+    </div>
+    <div class="container text-align">
+        <hr>
+        <center>
+            <h1>Cuidado del Rostro </h1>
+            <div class="contenedor-imagen">
+                <img src="https://i.pinimg.com/736x/0b/f1/bf/0bf1bf829338dde8b53a98f777d35949.jpg" width="500px" alt="ceviche">
+            </div>
+        </center>
+        <p>Para tener un rostro saludable y bello, puedes seguir estos tips:</p>
+        <b>1.Hidratación</b>
+        <p>Beber al menos dos litros de agua al día ayuda a que la piel conserve su brillo y a que el ácido hialurónico retenga la humedad. </p>
+        <b>2.Limpieza</b>
+        <p>Desmaquillarse y limpiarse el rostro dos veces al día, una en la mañana y otra en la noche, ayuda a eliminar impurezas y células muertas.</p>
+        <p>Ya que la superficie cutánea está continuamente expuesta a factores externos que pueden alterar su aspecto y provocar imperfecciones, tono apagado, textura irregular o envejecimiento prematuro. Por ello, es primordial mantener la piel limpia.</p>
+        <b>3.Mascarillas</b>
+        <p>Aplicar una mascarilla una vez por semana ayuda a limpiar en profundidad y a tratar zonas específicas. </p>
+        <b>4.Contorno de ojos</b>
+        <p>La piel que rodea los ojos es más delicada, por lo que es importante cuidarla a diario con pequeños toques con la yema de los dedos</p>
+        <b>5.Dieta saludable</b>
+        <p>Consumir frutas, verduras, cereales integrales y proteínas magras ayuda a que la piel refleje salud y bienestar.</p>
+        <b>6.Ejercicio regular</b>
+        <p>Mejora la circulación sanguínea y ayuda a mantener la piel más radiante.</p>
+        <b>7.Evitar el estrés</b>
+        <p>El estrés está relacionado con la piel, por lo que es importante encontrar un equilibrio y darse pausas</p>
+        <b>8.No fumar</b>
+        <p>Fumar contribuye a la formación de arrugas y le da a la piel un aspecto avejentado. </p>
+        <hr>
+        <center>
+            <h1>Cuidado capilar</h1>
+            <div class="contenedor-imagen">
+                <img src="https://i.pinimg.com/736x/e6/03/21/e60321ca9075cec1aa8c69478475a78f.jpg" width="500px" alt="ceviche">
+            </div>
+        </center>
+        <p>Para cuidar el cabello, puedes seguir estos consejos:</p>
+        <p><b>-Lavado: </b>Lava el cabello 2 o 3 veces por semana con un champú adecuado a tu tipo de cabello. Masajea el cuero cabelludo durante 15 minutos. Evita el agua muy caliente y no frotes el cabello con la toalla</p>
+        <p><b>-Acondicionamiento:</b> Aplica el acondicionador de medios a puntas. </p>
+        <p><b>-Protección térmica:</b> Si usas secador o planchita, aplica un producto de protección térmica</p>
+        <p><b>-Cepillado:</b> Evita cepillarte el cabello cuando está mojado. </p>
+        <p><b>-Nutrición:</b> Aplica baños de crema o mascarillas de aceite de oliva, coco, aguacate, aloe vera o mayonesa. </p>
+        <p><b>-Vitaminas: </b>Consumir vitaminas del grupo B (B3, B7, B9, entre otras) ayuda a mantener el cabello fuerte y brillante.</p>
+        <p><b>-Suplementos:</b> Tomar suplementos alimenticios a base de extractos marinos puede ayudar a reducir la caída del cabello. 
+        </p>
+        <p><b>-Tónico:</b> Usar un tónico para el cuero cabelludo puede ayudar a fortalecer el crecimiento del cabello.</p>
+        <p><b>-Corte de puntas:</b> Corta las puntas cada 3 o 4 meses para que el cabello crezca más rápido. </p>
+        <p><b>-Protección al nadar:</b> Usa un gorro de lycra para proteger tu cabello del cloro. </p>
+        <p><b>-Recogidos: </b>Usa gomas de tela y evita horquillas y gomas de plástico. </p>
+        <hr>
+        <center>
+            <h1>Cuidado de la Piel</h1>
+            <div class="contenedor-imagen">
+                <img src="https://i.pinimg.com/736x/6a/11/66/6a11664ae9769bae072ba2e5161ade87.jpg" width="500px" alt="ceviche">
+            </div>
+        </center>
+        <p>El buen cuidado de la piel, como la protección solar y la limpieza suave, puede mantener la piel sana y radiante.</p>
+        <p>Algunos consejos para cuidar la piel y el cuerpo son:</p>
+        <p><b>-Hidratación:</b> Hidratar la piel es un paso esencial en la rutina de belleza diaria. Puedes usar cremas hidratantes con protector solar para proteger la piel de los rayos UVA. </p>
+        <p><b>-Limpieza:</b> Usa un limpiador suave y sécate con toques para que la piel retenga humedad.</p>
+        <p><b>-Protección solar: </b>Protegerse del sol es una de las formas más importantes para cuidar la piel. </p>
+        <p>-oma ácidos grasos omega-3: Se encuentran en el pescado y las semillas de chía, y pueden ayudar a fortalecer la barrera de la piel. 
+        </p>
+        <p><b>-Usa productos adecuados:</b> Es recomendable elegir productos diseñados para el tipo de piel y realizar una prueba de parche antes de usarlos. </p>
+        <p><b>-Abrígate en invierno:</b> El clima frío, el viento y el sol pueden secar la piel. </p>
+        <p>-Usa retinol: Existen productos corporales con retinol que pueden ayudar a tratar estrías, marcas de acné, manchas de sol y arrugas. </p>
+        <p><b>-Consumir vitaminas:</b> Comer alimentos ricos en vitaminas A, C y E es importante para la salud. </p>
+        <p><b>-Dieta saludable:</b> Llevar una dieta saludable es importante para cuidar la piel. </p>
+        <p><b>-Evitar el tabaco y el alcohol:</b> Fumar y el alcohol envejecen la piel y contribuyen a la formación de arrugas</p>
+        <p><b>-Come alimentos ricos en agua:</b> Las frutas y verduras pueden ayudar a mantener la piel hidratada. 
+        </p>
+    </div>
+    <hr>
+    <div class="container text-center">
+        <h1>Contacto</h1>
+    </div>
+    <div class="container text-center">
+        <p>Para más información, visita <a href="https://thegrapebeauty.com.ec/" target="_blank"> skin care products</a>.</p>
+        <div class="social-icons">
+        <a href="https://www.instagram.com" target="_blank"><i class="fab fa-instagram fa-2x"></i></a>
+        <a href="https://www.facebook.com" target="_blank"><i class="fab fa-facebook fa-2x"></i></a>
+        <a href="https://www.twitter.com" target="_blank"><i class="fab fa-twitter fa-2x"></i></a>
+    </div>
+</section>
+
+  <!-- Sección Login -->
+  <section id="login" class="custom-section">
+    <div class="container">
+      <h2 class="text-center">Inicia Sesión</h2>
+      <form class="mx-auto" style="max-width: 400px;">
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Ingresa tu correo">
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Contraseña</label>
+          <input type="password" class="form-control" id="password" placeholder="Ingresa tu contraseña">
+        </div>
+        <button type="submit" class="btn btn-primary w-100">Iniciar Sesión</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
